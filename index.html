@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es" data-mode="dormir">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vigilia — plataforma de validación Fase 1: literatura clásica para dormir y pensar, calendario de 12 semanas y panel OKR en vivo.">
+<meta name="theme-color" content="#0a0f24">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Vigilia · Literatura que vela tu descanso y tu criterio">
+<meta property="og:description" content="Literatura clásica para dormir y pensar mejor: episodio por semana durante doce semanas.">
+<meta property="og:image" content="/vigilia-assets/ep01-cover.png">
+<title>Vigilia · Fase 1 — Literatura que vela tu descanso y tu criterio</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+<div id="cielo" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">VIGI<span>LIA</span></a>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#escuchar" data-spy="escuchar">Escuchar</a></li>
+        <li><a href="#metodo" data-spy="metodo">Método</a></li>
+        <li><a href="#calendario" data-spy="calendario">12 semanas</a></li>
+        <li><a href="#panel" data-spy="panel">Panel OKR</a></li>
+        <li><a href="#espera" data-spy="espera">Lista</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="muteBtn" aria-pressed="false" aria-label="Silenciar todo el sonido">
+        <svg id="muteIcoOn" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+        <svg id="muteIcoOff" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm18.6 3l2.1-2.1-1.4-1.4-2.1 2.1-2.1-2.1-1.4 1.4 2.1 2.1-2.1 2.1 1.4 1.4 2.1-2.1 2.1 2.1 1.4-1.4-2.1-2.1z"/></svg>
+        <span id="muteTxt">Sonido</span>
+      </button>
+      <a class="btn btn-accent btn-sm" href="#espera">Unirme</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="staged">
+      <span class="kicker">Fase 1 · Validación · 12 semanas</span>
+      <h1>La razón <em>vela</em> mientras tu cuerpo <em>descansa</em>.</h1>
+      <p class="lead">Literatura clásica —Cervantes, Quevedo, Homero, Dante— operada como antídoto contra los gigantes imaginarios de tu siglo. Un episodio por semana, durante tres meses, para validar si esto merece existir.</p>
+      <div class="hero-actions">
+        <button class="btn btn-accent" id="ctaPlay">▶ Escuchar el Capítulo 1</button>
+        <a class="btn btn-ghost" href="#espera">Unirme a la lista de espera</a>
+      </div>
+      <p class="honest"><strong>Honestidad primero:</strong> aún no vendemos nada. Textos de dominio público verificados en la BVMC. Sin autoayuda vacía, sin promesas mágicas.</p>
+    </div>
+    <figure class="hero-art" id="heroArt">
+      <img id="heroImg" src="/vigilia-assets/ep01-cover.png" alt="Pintura realista nocturna: don Quijote a caballo con lanza avanza hacia los molinos de viento de La Mancha bajo un cielo estrellado; Sancho Panza observa desde su asno; una ventana dorada ilumina el primer molino.">
+      <figcaption class="hero-badge"><b>Ep. 1</b> · Los molinos de viento · ~18 min · multi-voz</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="escuchar">
+  <div class="wrap">
+    <h2 class="reveal">Reproductor · Capítulo 1 completo</h2>
+    <p class="sub reveal">Voces automáticas por rol (Narrador Vigilia, Narrador Quijote, Quijote, Sancho). Barra operable con teclado (←/→ ±5 s, Inicio/Fin, Espacio). El viento ambiental acompaña la coda; siléncialo todo desde la cabecera.</p>
+    <div class="player-card reveal">
+      <button class="pc-art" id="expandBtn" aria-label="Expandir vista de reproducción del episodio">
+        <img class="artImg" src="/vigilia-assets/ep01-cover.png" alt="">
+        <span class="expand-hint" aria-hidden="true"><svg width="60%" height="60%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span>
+      </button>
+      <div class="pc-info">
+        <strong id="pTitle">Episodio 1 · Los molinos de viento</strong>
+        <span id="pSub">Quijote I, 8 · Cervantes · —</span>
+      </div>
+      <div class="pc-controls">
+        <button class="ctl" id="back5" aria-label="Retroceder 5 segundos"><svg width="60%" height="60%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v5h5"/><text x="12.4" y="15.4" text-anchor="middle" font-size="8.5" fill="currentColor" stroke="none">5</text></svg></button>
+        <button class="ctl ctl-main" id="playBtn" aria-label="Reproducir" aria-pressed="false"><svg id="icoPlay" width="55%" height="55%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg id="icoPause" width="55%" height="55%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
+        <button class="ctl" id="fwd5" aria-label="Adelantar 5 segundos"><svg width="60%" height="60%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/><text x="11.6" y="15.4" text-anchor="middle" font-size="8.5" fill="currentColor" stroke="none">5</text></svg></button>
+        <button class="ctl" id="stopBtn" aria-label="Detener"><svg width="50%" height="50%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+      </div>
+      <div class="pc-meta">
+        <div class="seg" role="group" aria-label="Modo de escucha">
+          <button class="modeBtn" data-mode="dormir" aria-pressed="true">Dormir</button>
+          <button class="modeBtn" data-mode="pensar" aria-pressed="false">Pensar</button>
+        </div>
+        <div class="seg" role="group" aria-label="Velocidad">
+          <button class="spd" data-speed="0.8" aria-pressed="false">0.8×</button>
+          <button class="spd" data-speed="1" aria-pressed="true">1×</button>
+          <button class="spd" data-speed="1.2" aria-pressed="false">1.2×</button>
+        </div>
+        <label class="amb">Viento <input type="range" class="ambVol" min="0" max="100" value="35" aria-label="Volumen del viento ambiental"><span id="windDot" aria-hidden="true"></span></label>
+      </div>
+      <div class="pc-progress">
+        <div class="bar" id="bar" role="slider" tabindex="0" aria-label="Progreso del episodio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="barFill"></i></div>
+        <span class="time" id="timeTxt">≈ 0:00 / 0:00</span>
+      </div>
+    </div>
+    <p class="pc-note" id="status" role="status" aria-live="polite">—</p>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <h2 class="reveal">El método Vigilia · cuatro movimientos</h2>
+    <p class="sub reveal">Cada episodio es una operación material sobre un texto de dominio público, no una interpretación emocional.</p>
+    <div class="cards cards-4">
+      <article class="card reveal"><span class="num">I</span><h3>Umbral</h3><p>Respiración y pregunta de la noche: ¿contra qué gigante imaginario peleas hoy?</p></article>
+      <article class="card reveal"><span class="num">II</span><h3>Narración</h3><p>El pasaje íntegro y literal, con voces por personaje. La materia prima, sin adulterar.</p></article>
+      <article class="card reveal"><span class="num">III</span><h3>La Lente</h3><p>Crítica de la Razón Literaria: los lentes, el error del conocer, el libro que pone los lentes.</p></article>
+      <article class="card reveal"><span class="num">IV</span><h3>Coda</h3><p>La voz se desvanece sobre el viento. Si te dormiste, ya cumplió su función.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="etapas">
+  <div class="wrap">
+    <h2 class="reveal">Un antídoto para cada etapa</h2>
+    <p class="sub reveal">La misma obra sirve a toda la casa: doble público, un solo producto.</p>
+    <div class="cards cards-4">
+      <article class="card reveal"><h3>Niñez</h3><p>Encender la luz y tocar juntos la chaqueta que parecía monstruo: verificar antes de temer.</p></article>
+      <article class="card reveal"><h3>Juventud</h3><p>El dato real contra el miedo del feed: cambiar los lentes con que se mira el futuro.</p></article>
+      <article class="card reveal"><h3>Adultez</h3><p>La factura cotizada en papel: la deuda como contrato, no como catástrofe.</p></article>
+      <article class="card reveal"><h3>Vejez</h3><p>Cervantes publicó su máquina a los 57, con una mano herida: nunca es tarde para operar la materia.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="calendario">
+  <div class="wrap">
+    <h2 class="reveal">Calendario de validación · 12 semanas</h2>
+    <p class="sub reveal">Una serie de doce episodios. Elige un episodio disponible para cargarlo. Las fechas de estreno se anunciarán cuando estén confirmadas.</p>
+    <div class="ep-scroll reveal" id="epScroll" role="tablist" aria-label="Episodios del calendario"></div>
+  </div>
+</section>
+
+<section id="panel">
+  <div class="wrap">
+    <div class="panel-head">
+      <div>
+        <h2>Panel OKR · Fase 1</h2>
+        <p class="sub" style="margin-bottom:0">Métricas locales de la fase de validación. La decisión Go/No-Go se tomará cuando haya evidencia suficiente. Los datos demo están etiquetados y nunca cuentan para la decisión.</p>
+      </div>
+      <span class="chip warn" id="goChip">En validación</span>
+    </div>
+    <div class="obj-strip" aria-label="Objetivos del proyecto">
+      <span class="obj">O1 ingresos sostenibles</span><span class="obj">O2 100% digital</span><span class="obj">O3 proteger CLB 9</span><span class="obj">O4 plataforma referente</span><span class="obj">O5 democratizar</span><span class="obj">O6 doble público</span><span class="obj">O7 materialismo</span><span class="obj">O8 monetizar por fases</span><span class="obj">O9 ética / WCAG</span><span class="obj">O10 preservar capital</span>
+    </div>
+    <div class="metrics" id="metricsGrid"></div>
+    <div class="charts">
+      <div class="chart-card reveal"><h3>Disposición a pagar (USD/mes)</h3><div id="chartWtp"></div></div>
+      <div class="chart-card reveal"><h3>Finalización de escucha (%)</h3><div id="chartComp"></div></div>
+    </div>
+    <div class="fb-row">
+      <span style="font-size:.85rem;color:var(--muted)">¿Qué hizo este episodio por ti?</span>
+      <button class="fb" data-v="dormir">Me ayudó a dormir</button>
+      <button class="fb" data-v="pensar">Me hizo pensar</button>
+      <button class="fb" data-v="ambos">Ambos</button>
+      <button class="fb" data-v="ninguno">Ninguno</button>
+      <span class="fb-count" id="fbCount">0 respuestas positivas reales</span>
+    </div>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Buscar correo, perfil o motivo…" aria-label="Buscar registros">
+      <select id="fPerfil" aria-label="Filtrar por perfil"><option value="">Todos los perfiles</option><option value="padre">Padre/madre</option><option value="adulto">Adulto</option><option value="estudiante">Estudiante</option><option value="lider">Líder</option></select>
+      <select id="sortBy" aria-label="Ordenar"><option value="fecha-desc">Fecha ↓</option><option value="fecha-asc">Fecha ↑</option><option value="precio-desc">Precio ↓</option><option value="precio-asc">Precio ↑</option></select>
+      <label class="amb"><input type="checkbox" id="demoToggle" checked> Incluir demo en gráficos</label>
+      <button class="btn btn-ghost btn-sm" id="bulkDel" disabled>Eliminar seleccionados</button>
+      <button class="btn btn-accent btn-sm" id="expCsv">CSV</button>
+      <button class="btn btn-ghost btn-sm" id="expJson">JSON</button>
+      <button class="btn btn-ghost btn-sm" id="resetDemo">Restablecer demo</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th><input type="checkbox" id="selAll" aria-label="Seleccionar todos"></th><th>Correo</th><th>Perfil</th><th>Motivo</th><th>$</th><th>Fecha</th><th>Origen</th><th></th></tr></thead>
+        <tbody id="leadsBody"></tbody>
+      </table>
+    </div>
+    <p class="pc-note" id="leadsCount">—</p>
+  </div>
+</section>
+
+<section id="espera">
+  <div class="wrap">
+    <h2 class="reveal">Lista de espera</h2>
+    <p class="sub reveal">Cuatro preguntas que construyen el catálogo que tu casa necesita. Tu registro entra al panel OKR al instante.</p>
+    <div class="form-card reveal">
+      <form id="leadForm" name="vigilia-lista" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="vigilia-lista">
+        <p hidden><label>No rellenar: <input name="bot-field"></label></p>
+        <fieldset><legend>1. ¿Qué te trajo aquí?</legend><div class="opts cols">
+          <label class="opt"><input type="radio" name="motivo" value="dormir" checked> No puedo dormir bien</label>
+          <label class="opt"><input type="radio" name="motivo" value="pensar"> Quiero pensar más claro</label>
+          <label class="opt"><input type="radio" name="motivo" value="hijos"> Contenido clásico para mis hijos</label>
+          <label class="opt"><input type="radio" name="motivo" value="otro"> Otro</label></div></fieldset>
+        <fieldset><legend>2. ¿Con qué perfil te identificas?</legend><div class="opts cols">
+          <label class="opt"><input type="radio" name="perfil" value="padre" checked> Padre / madre joven (25–40)</label>
+          <label class="opt"><input type="radio" name="perfil" value="adulto"> Profesional / adulto (25–50)</label>
+          <label class="opt"><input type="radio" name="perfil" value="estudiante"> Estudiante de humanidades</label>
+          <label class="opt"><input type="radio" name="perfil" value="lider"> Emprendedor o líder</label></div></fieldset>
+        <fieldset><legend>3. ¿Cuánto pagarías al mes?</legend><div class="opts cols">
+          <label class="opt"><input type="radio" name="precio" value="0"> $0 · solo gratuito</label>
+          <label class="opt"><input type="radio" name="precio" value="3" checked> $3 USD</label>
+          <label class="opt"><input type="radio" name="precio" value="9"> $9 USD</label>
+          <label class="opt"><input type="radio" name="precio" value="15"> $15 USD</label></div></fieldset>
+        <fieldset><legend>4. Tu correo</legend><label class="mail" for="email">Correo (obligatorio)</label>
+          <input type="email" id="email" name="email" placeholder="nombre@correo.com" required autocomplete="email" aria-describedby="emailError">
+          <p class="field-error" id="emailError" hidden></p></fieldset>
+        <button class="btn btn-accent" type="submit">Reservar mi lugar en la vigilia</button>
+        <p class="form-foot">Solo para avisarte del lanzamiento. Sin spam; eliminación a pedido. Los datos se envían de forma segura a Netlify.</p>
+        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="honestidad">
+  <div class="wrap">
+    <h2 class="reveal">Qué es y qué no es</h2>
+    <div class="cards cards-2">
+      <article class="card reveal"><h3>Sí es</h3><ul class="list yes">
+        <li>Literatura crítica: cómo opera el texto y cómo operas tú.</li>
+        <li>Dominio público verificado (BVMC / Wikisource).</li>
+        <li>Accesible (WCAG 2.2 AA) y sin patrones oscuros.</li>
+        <li>Un antídoto por etapa de vida para toda la casa.</li></ul></article>
+      <article class="card reveal"><h3>No es</h3><ul class="list no">
+        <li>Autoayuda vacía ni promesas de ingresos o curas milagrosas.</li>
+        <li>Terapia ni sustituto de profesionales de salud.</li>
+        <li>«El texto significa lo que tú sientas».</li>
+        <li>Un producto terminado: validación pública y transparente.</li></ul></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>VIGILIA</strong> · Cervantes, Quevedo, Homero, Dante, Clarín: dominio público · <button class="linklike" id="footPanel">Ir al panel OKR</button></p>
+    <p>Aviso Legal: Esta página y su análisis se proporcionan únicamente con fines educativos, informativos y de modelado estratégico. No constituye asesoramiento financiero, legal, fiscal o migratorio personalizado. La inversión y planificación financiera conlleva riesgos inherentes, incluida posible pérdida de principal y volatilidad cambiaria. Los modelos de negocio digitales presentan riesgos de ejecución y de mercado. El diseño de plataformas digitales debe validarse con investigación de usuarios real antes de implementaciones a gran escala. El contenido cultural y literario debe respetar derechos de autor y propiedad intelectual. Las métricas mostradas son locales y de demostración; no representan resultados reales de mercado. Se recomienda encarecidamente consultar con profesionales certificados y regulados antes de tomar cualquier decisión vinculante.</p>
+  </div>
+</footer>
+
+<aside id="drawer" role="dialog" aria-modal="false" aria-labelledby="drawerTitle">
+  <h3 id="drawerTitle">Registro</h3>
+  <div class="dl" id="drawerBody"></div>
+  <button class="btn btn-ghost btn-sm" id="drawerDel">Eliminar registro</button>
+  <button class="btn btn-ghost btn-sm" id="drawerClose" style="margin-left:.5rem">Cerrar</button>
+</aside>
+
+<div id="toast" role="status"><span id="toastMsg">—</span><button class="btn btn-accent btn-sm" id="toastUndo">Deshacer</button></div>
+
+<div id="playerFull" hidden role="dialog" aria-modal="true" aria-labelledby="pfTitle">
+  <div class="pf-head">
+    <h3 id="pfTitle">Vista de reproducción</h3>
+    <button class="btn btn-ghost btn-sm" id="pfClose">⌄ Cerrar</button>
+  </div>
+  <div class="pf-body">
+    <div class="pf-left">
+      <figure class="pf-art"><img class="artImg" src="/vigilia-assets/ep01-cover.png" alt="Ilustración realista del episodio: don Quijote carga contra los molinos; Sancho observa."></figure>
+      <p class="pf-meta" id="pfMeta"></p>
+      <div class="pf-controls">
+        <button class="pf-ctl" id="pfBack" aria-label="Retroceder 5 segundos"><svg width="60%" height="60%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v5h5"/><text x="12.4" y="15.4" text-anchor="middle" font-size="8.5" fill="currentColor" stroke="none">5</text></svg></button>
+        <button class="pf-ctl pf-ctl-main" id="pfPlay" aria-label="Reproducir" aria-pressed="false"><svg id="icoPlay2" width="55%" height="55%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg id="icoPause2" width="55%" height="55%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
+        <button class="pf-ctl" id="pfFwd" aria-label="Adelantar 5 segundos"><svg width="60%" height="60%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/><text x="11.6" y="15.4" text-anchor="middle" font-size="8.5" fill="currentColor" stroke="none">5</text></svg></button>
+        <button class="pf-ctl" id="pfStop" aria-label="Detener"><svg width="50%" height="50%" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+      </div>
+      <div class="seg" role="group" aria-label="Velocidad">
+        <button class="spd" data-speed="0.8" aria-pressed="false">0.8× sueño</button>
+        <button class="spd" data-speed="1" aria-pressed="true">1×</button>
+        <button class="spd" data-speed="1.2" aria-pressed="false">1.2×</button>
+      </div>
+      <label class="amb">Viento <input type="range" class="ambVol" min="0" max="100" value="35" aria-label="Volumen del viento ambiental"><span class="windDot2" aria-hidden="true"></span></label>
+      <div class="bar pf-bar" id="pfBar" role="slider" tabindex="0" aria-label="Progreso del episodio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="pfBarFill"></i></div>
+      <span class="time" id="pfTime">≈ 0:00 / 0:00</span>
+      <button class="btn btn-ghost btn-sm" id="dlOffline" disabled>Descargar para escuchar sin conexión</button>
+      <p class="dl-note" id="dlNote">La descarga offline se activará al publicar tu MP3 junto a esta página.</p>
+      <details class="prod">
+        <summary>Modo productor · descargar guion técnico</summary>
+        <div class="pf-export">
+          <button class="btn btn-accent btn-sm" id="expSSML">SSML (voces por rol)</button>
+          <button class="btn btn-ghost btn-sm" id="expJSON">JSON (segmentos)</button>
+        </div>
+      </details>
+    </div>
+    <div class="pf-right">
+      <div class="transcript" id="transcript" tabindex="0" aria-label="Transcripción sincronizada del episodio"></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/plain" id="guion_ep01">
+[Narrador Vigilia] Bienvenido a Vigilia. Donde la razón vela mientras tú descansas.
+El texto de esta noche es un antídoto. Un antídoto contra una de las enfermedades más viejas del ser humano en toda edad: confundir lo que existe con lo que tememos.
+En el año 1605, Miguel de Cervantes, soldado herido y recaudador de impuestos arruinado, construyó una máquina para desmontar esa confusión.
+La máquina tiene cuatro piezas: el que escribe, lo escrito, el que lee... y tú, que escuchas y desmontas. A esta última pieza la llamamos: intérprete: no el que se traga el cuento, sino el que lo desmenuza para ver cómo funciona.
+La pregunta de esta noche no es qué sientes. Es más simple y más útil: ¿contra qué gigante imaginario peleas hoy?
+Respira. Si te duermes, bien. Si te quedas despierto, también. En ambos casos, el antídoto trabaja.
+Extracto del capítulo VIII de la Primera parte de Don Quijote de la Mancha: Del buen suceso que el valeroso don Quijote tuvo en la espantable y jamás imaginada aventura de los molinos de viento, con otros sucesos dignos de felice recordación.
+[Narrador Quijote] En esto, descubrieron treinta o cuarenta molinos de viento que hay en aquel campo, y así como don Quijote los vio, dijo a su escudero:
+[Quijote] —La ventura va guiando nuestras cosas mejor de lo que acertáramos a desear; porque ves allí, amigo Sancho Panza, donde se descubren treinta, o pocos más, desaforados gigantes, con quien pienso hacer batalla y quitarles a todos las vidas, con cuyos despojos comenzaremos a enriquecer; que esta es buena guerra, y es gran servicio de Dios quitar tan mala simiente de sobre la faz de la tierra.
+[Sancho] —¿Qué gigantes? [Narrador Quijote] —dijo Sancho Panza.
+[Quijote] —Aquellos que ves allí [Narrador Quijote] —respondió su amo—, [Quijote] de los brazos largos, que los suelen tener algunos de casi dos leguas.
+[Sancho] —Mire vuestra merced [Narrador Quijote] —respondió Sancho— [Sancho] que aquellos que allí se parecen no son gigantes, sino molinos de viento, y lo que en ellos parecen brazos son las aspas, que, volteadas del viento, hacen andar la piedra del molino.
+[Quijote] —Bien parece — [Narrador Quijote] respondió don Quijote— [Quijote] que no estás cursado en esto de las aventuras: ellos son gigantes; y si tienes miedo, quítate de ahí, y ponte en oración en el espacio que yo voy a entrar con ellos en fiera y desigual batalla.
+[Narrador Quijote] Y diciendo esto, dio de espuelas a su caballo Rocinante, sin atender a las voces que su escudero Sancho le daba, advirtiéndole que, sin duda alguna, eran molinos de viento, y no gigantes, aquellos que iba a acometer. Pero él iba tan puesto en que eran gigantes, que ni oía las voces de su escudero Sancho, ni echaba de ver, aunque estaba ya bien cerca, lo que eran; antes iba diciendo en voces altas:
+[Quijote] —Non fuyades, cobardes y viles criaturas; que un solo caballero es el que os acomete.
+[Narrador Quijote] Levantóse en esto un poco de viento, y las grandes aspas comenzaron a moverse, lo cual visto por don Quijote, dijo:
+[Quijote] —Pues aunque mováis más brazos que los del gigante Briareo, me lo habéis de pagar.
+[Narrador Quijote] Y diciendo esto, y encomendándose de todo corazón a su señora Dulcinea, pidiéndole que en tal trance le socorriese, bien cubierto de su adarga, lanza en ristre, arremetió a todo el galope de Rocinante y embistió con el primero molino que estaba delante; y dándole una lanzada en el aspa, la volvió el viento con tanta furia, que hizo la lanza pedazos, llevándose de camino al caballo y al caballero, que fue rodando muy maltrecho por el campo. Acudió Sancho Panza a socorrerle, a todo el correr de su asno, y cuando llegó, halló que no se podía menear: tal fue el golpe que dio con él Rocinante.
+[Sancho] —¡Válame Dios! — [Narrador Quijote] dijo Sancho—. [Sancho] ¿No le dije yo a vuestra merced que mirase bien lo que hacía, que no eran sino molinos de viento, y no los podía ignorar sino quien llevase otros tales en la cabeza?
+[Quijote] —Calla, amigo Sancho — [Narrador Quijote] respondió don Quijote—; [Quijote] que las cosas de la guerra, más que otras, están sujetas a continua mudanza; cuanto más, que yo pienso, y es así verdad, que aquel sabio Frestón que me robó el estudio y los libros, ha vuelto estos gigantes en molinos por quitarme la gloria de su vencimiento: tal es la enemistad que me tiene; mas al cabo de cabo, con sus malas artes, poco durará contra la bondad de mi espada.
+[Sancho] —Dios lo haga como puede — [Narrador Quijote] dijo Sancho Panza.
+[PAUSA 3 SEGUNDOS]
+[Narrador Vigilia] La crítica. Operemos ahora el texto como un manual. Tres lecciones para ser compatibles con la realidad.
+Primera lección: los lentes. Don Quijote no ve molinos porque lleva puestos los lentes de sus libros de caballerías. A esos lentes los llamamos categoría: el punto de vista con que se mira. La categoría caballeresca exige gigantes; la materia de La Mancha ofrece molinos. Y cuando los lentes no coinciden con la cosa, la cosa siempre gana: el viento mueve las aspas, la lanza se rompe, el cuerpo cae.
+Esto te pasa hoy, tengas la edad que tengas. El niño que se pone los lentes del miedo en la oscuridad ve un monstruo donde hay una chaqueta colgada. El joven que se pone los lentes de la red social ve fracaso donde hay un proceso ordinario. El adulto que se pone los lentes de la catástrofe ve ruina donde hay una factura pagable. Cambia los lentes, y el gigante vuelve a ser molino.
+Segunda lección: el fallo del conocer. Don Quijote comete lo que se llama un error gnoseológico. La palabra es fea; la cosa es simple: creer que sabes lo que no has comprobado. Sancho comprueba: mira, toca, dice "son molinos". Don Quijote no comprueba: recuerda sus libros. La memoria no es prueba.
+Escribe este antídoto: antes de pelear, comprueba. Antes de odiar, comprueba. Antes de perder el sueño, comprueba.
+Tercera lección: el libro que pone los lentes. ¿Quién fabricó los gigantes de la cabeza de Don Quijote? No un enemigo: sus propias lecturas. Los libros de caballerías le pusieron los lentes. Aquí se completa la anatomía de la obra con sus cuatro piezas: el autor, Cervantes, escribe desde la materia real de la quiebra y del impuesto; la obra monta el engaño para que se vea; el lector de 1605, que también leyó esos libros, se rió al reconocerse; y tú, intérprete, haces esta noche la operación más sana: nombrar el libro que te puso los lentes. Porque hoy también hay libros que ponen lentes: el feed infinito, la noticia del miedo, la publicidad del estatus. No te venden gigantes; te venden los lentes con que los ves.
+No hay misterio que interpretar. Hay estructura que reconocer. Y una vez reconocida, pierde su poder sobre ti.
+[PAUSA 3 SEGUNDOS]
+[Narrador Vigilia] El método. Esta semana, ejecuta una sola operación. Elige el gigante que más te desvela y aplícale el manual de las cuatro comprobaciones.
+Uno: nombra la materia. ¿Qué cosa existe realmente? Un contrato, una pantalla, una factura, un examen. No el cuento: la cosa.
+Dos: nombra los lentes. ¿Con qué punto de vista lo estás mirando? ¿Catástrofe, vergüenza, destino?
+Tres: nombra el libro. ¿Qué relato, qué feed, qué voz te puso esos lentes? ¿A quién le conviene que tú veas un gigante?
+Cuatro: toca el molino. Comprueba con la mano o con el papel: llama, pregunta, cotiza, suma. Sancho lo hacía con palabras; tú lo harás con un bolígrafo. Y si compartes tu vida con alguien de otra etapa, préstale el antídoto. Al niño con miedo a lo oscuro: enciendan la luz y toquen juntos la chaqueta. Al joven con miedo al futuro: muéstrale el dato real contra el miedo del feed. Al adulto con miedo a la factura: cotízala en papel. Al mayor que cree que ya es tarde: recuérdale que Cervantes publicó su máquina a los cincuenta y siete años, con una mano herida y la otra sosteniendo la pluma.
+Cuando la estructura queda escrita, deja de operarte por dentro. Si te duermes, que descanses. Si te quedas despierto, que operes.
+[PAUSA 3 SEGUNDOS]
+[Narrador Vigilia] Los molinos giran... con el viento... Y tú giras... con la respiración... No hay gigantes... solo materia... No hay batallas... solo comprobaciones... Toca el molino... y descansa... Descansa... Verifica mañana... Pero ahora... descansa...
+</script>
+
+<script src="/js/app.js" defer></script>
+</body>
+</html>
